@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var array = ["0","2","5","4","6"]
+    document.write(array.valueOf());
+    document.write('<br/>')
+    array.push("8");
+    document.write(array.valueOf());
+    document.write('<br/>')
+    var result = "";
+    for (var i=0; i<array.length-1; i++){
+        result += array[i];
+        if (array[i]%2===0 && array[i+1]%2===0){
+            result += '-';
+        }
+    }
+    result+=array[array.length-1];
+    document.write('<br/>')
+    document.write(result.valueOf())
+</script>
+
+</body>
+</html>

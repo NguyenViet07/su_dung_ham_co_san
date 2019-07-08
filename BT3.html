@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var str = "The Quick Brown Fox";
+        const UPPER = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        const LOWER = "abcdefghijklmnopqrstuvwxyz";
+        let result = "";
+        for(let i=0; i<str.length; i++)
+        {
+            if(UPPER.includes(str[i]))
+            {
+                result += str[i].toLowerCase();
+            }
+            else if(LOWER.includes(str[i]))
+            {
+                result += str[i].toUpperCase();
+            }
+            else
+            {
+                result += str[i];
+            }
+        }
+        console.log(result.valueOf());
+        document.write(str.valueOf());
+        document.write("<br />")
+        document.write(result.valueOf());
+    </script>
+
+</body>
+</html>
